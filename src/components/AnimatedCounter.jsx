@@ -1,5 +1,5 @@
 import React, { useState, useRef } from "react";
-import { counterItems } from "./constants";
+import { counterItems } from "../constants";
 import CountUp from "react-countup";
 import { useGSAP } from "@gsap/react";
 import { gsap } from "gsap";
