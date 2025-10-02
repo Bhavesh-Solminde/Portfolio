@@ -45,16 +45,16 @@ const ShowCaseSection = () => {
           {/* Left Side*/}
           <div className="first-project-wrapper" ref={project1Ref}>
             <div className="image-warapper">
-              <img src="/images/project1.png" alt="project1" />
+              <a href="https://hostara.onrender.com/listings">
+                <img src="/images/project1.png" alt="project1" />
+              </a>
             </div>
             <div className="text-content">
-              <h2>
-                On-Demand Rides Made Simple with a Powerful, User-Friendly App
-                call Ryde
-              </h2>
+              <h2>🏡 Hostara – Full-Stack Property Rental Platform</h2>
               <p className="text-white-50 md:text-xl">
-                Ryde is a ride-hailing app that connects passengers with drivers
-                in real-time.
+                A comprehensive property booking and rental house website built
+                using the MERN Stack + EJS, enabling users to explore, list, and
+                review rental properties with a seamless UI/UX.
               </p>
             </div>
           </div>

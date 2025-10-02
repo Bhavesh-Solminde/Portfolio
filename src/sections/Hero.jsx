@@ -61,7 +61,8 @@ const Hero = () => {
               <h1>that Deliver Results</h1>
             </div>
             <p className="text-white-50 md:text-xl relative z-10 pointer-events-none">
-              I am a passionate and dedicated freelance web developer with over
+              I'm Bhavesh, a Full-Stack developer dedicated to crafting
+              innovative web solutions.
             </p>
             <Button
               text="See My Work"
