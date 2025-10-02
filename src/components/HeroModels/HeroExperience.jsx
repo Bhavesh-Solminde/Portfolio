@@ -13,7 +13,7 @@ const HeroExperience = () => {
     const checkScreenSize = () => {
       const width = window.innerWidth;
       setIsMobile(width <= 480);
-      setIsTablet(width <= 768 && width > 480);
+      setIsTablet(width <= 1280 && width > 480);
     };
 
     // Check on mount
@@ -27,7 +27,7 @@ const HeroExperience = () => {
   }, []);
 
   return (
-    <Canvas camera={{ position: [0, 0, 15], fov: 45 }}>
+    <Canvas camera={{ position: [0, 0, 15], fov: isTablet ? 60 : 45 }}>
       <HeroLights />
 
       <Particles count={100} />

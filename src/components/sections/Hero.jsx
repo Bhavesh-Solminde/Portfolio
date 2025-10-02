@@ -32,7 +32,7 @@ const Hero = () => {
       <div className="hero-layout">
         {/* Left Side: HERO CONTENT */}
         <header
-          style={{ zIndex: 10 }}
+          style={window.innerWidth < 1280 ? { zIndex: 10 } : {}}
           className="flex flex-col justify-center md:w-full w-screen md:px-20 px-5"
         >
           <div className="flex flex-col gap-7">
