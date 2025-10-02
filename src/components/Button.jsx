@@ -3,6 +3,7 @@ import React from "react";
 const Button = ({ text, className, id }) => {
   return (
     <a
+      style={{ zIndex: 20 }}
       onClick={(e) => {
         e.preventDefault();
         const element = document.getElementById("counter");

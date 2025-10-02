@@ -1,10 +1,42 @@
 import React from "react";
+import { useGSAP } from "@gsap/react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 
 const ShowCaseSection = () => {
   const sectionRef = React.useRef(null);
   const project1Ref = React.useRef(null);
   const project2Ref = React.useRef(null);
   const project3Ref = React.useRef(null);
+
+  useGSAP(() => {
+    const projectRefs = [
+      project1Ref.current,
+      project2Ref.current,
+      project3Ref.current,
+    ];
+    projectRefs.forEach((ref, index) => {
+      gsap.fromTo(
+        ref,
+        {
+          opacity: 0,
+          y: 50,
+        },
+        {
+          opacity: 1,
+          y: 0,
+          scrollTrigger: {
+            trigger: sectionRef.current,
+            start: "top 80%",
+          },
+          duration: 1,
+          ease: "power2.inOut",
+          delay: (index + 1) * 0.3, // Stagger by 0.3s for each project
+        }
+      );
+    }, []);
+  });
 
   return (
     <div id="work" ref={sectionRef} className="app-showcase">
