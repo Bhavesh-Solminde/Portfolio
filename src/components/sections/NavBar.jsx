@@ -18,7 +18,7 @@ const NavBar = () => {
   }, []);
   return (
     <header
-      className={`navbar     z-30 ${isScroll ? "scrolled" : "not-scrolled"}`}
+      className={`navbar     z-100 ${isScroll ? "scrolled" : "not-scrolled"}`}
       style={{ backdropFilter: "blur(10px)" }}
     >
       <div className="inner">

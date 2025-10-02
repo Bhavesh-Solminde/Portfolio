@@ -243,22 +243,21 @@ const testimonials = [
   },
 ];
 
-const socialImgs = [
+const socialInfos = [
   {
     name: "insta",
     imgPath: "/images/insta.png",
+    url: "https://www.instagram.com/bhavesh_solminde/",
   },
   {
-    name: "fb",
-    imgPath: "/images/fb.png",
-  },
-  {
-    name: "x",
-    imgPath: "/images/x.png",
+    name: "github",
+    imgPath: "/images/github.png",
+    url: "https://github.com/Bhavesh-Solminde",
   },
   {
     name: "linkedin",
     imgPath: "/images/linkedin.png",
+    url: "https://www.linkedin.com/in/bhaveshsolminde/",
   },
 ];
 
@@ -270,7 +269,7 @@ export {
   expCards,
   expLogos,
   testimonials,
-  socialImgs,
+  socialInfos,
   techStackIcons,
   techStackImgs,
   navLinks,
