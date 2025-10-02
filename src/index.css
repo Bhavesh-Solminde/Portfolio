@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap");
 @import "tailwindcss";
 
+/* Restore default HTML element styling with responsive design */
+
 :root {
   --gradient: radial-gradient(circle, #e5e5e5 0%, #fff 100%);
 }
@@ -305,7 +307,7 @@ section {
     }
 
     p {
-      @apply text-center md:text-start;
+      @apply text-center md:text-start cursor-pointer;
     }
 
     .socials {
@@ -326,13 +328,13 @@ section {
 .slide {
   display: inline-block;
   flex-direction: column;
-  transition: all cubic-bezier(0.71, 0.03, 0.34, 1);
+  transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 .wrapper {
   display: flex;
   flex-direction: column;
-  animation: wordSlider 21s infinite cubic-bezier(0.9, 0.01, 0.3, 0.99);
+  animation: wordSlider 24s infinite cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @keyframes wordSlider {

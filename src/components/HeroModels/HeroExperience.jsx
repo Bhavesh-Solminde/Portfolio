@@ -1,0 +1,54 @@
+import { OrbitControls } from "@react-three/drei";
+import { Canvas } from "@react-three/fiber";
+import React, { useState, useEffect } from "react";
+import { Room } from "./Room";
+import HeroLights from "./HeroLights";
+import Particles from "./particles";
+
+const HeroExperience = () => {
+  const [isTablet, setIsTablet] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkScreenSize = () => {
+      const width = window.innerWidth;
+      setIsMobile(width <= 480);
+      setIsTablet(width <= 768 && width > 480);
+    };
+
+    // Check on mount
+    checkScreenSize();
+
+    // Add resize listener
+    window.addEventListener("resize", checkScreenSize);
+
+    // Cleanup
+    return () => window.removeEventListener("resize", checkScreenSize);
+  }, []);
+
+  return (
+    <Canvas camera={{ position: [0, 0, 15], fov: 45 }}>
+      <HeroLights />
+
+      <Particles count={100} />
+
+      <OrbitControls
+        enablePan={false}
+        enableZoom={!isTablet && !isMobile} // No zoom on mobile/tablet
+        maxDistance={20}
+        minDistance={5}
+        minPolarAngle={Math.PI / 5}
+        maxPolarAngle={Math.PI / 2}
+      />
+      <group
+        scale={isMobile ? 0.8 : 1}
+        position={[0, -3.5, 0]}
+        rotation={[0, -Math.PI / 4, 0]}
+      >
+        <Room />
+      </group>
+    </Canvas>
+  );
+};
+
+export default HeroExperience;
