@@ -2,6 +2,12 @@
 
 > A modern, interactive portfolio website showcasing my skills as a full-stack developer with stunning 3D animations and smooth user experiences.
 
+## 🌟 Live Demo
+
+🔗 **Primary URL:** [https://portfolio-bhaveshs-projects-51e32c25.vercel.app](https://portfolio-bhaveshs-projects-51e32c25.vercel.app)
+
+🔗 **Alternative URL:** [https://portfolio-navy-delta-f2nb38f4r5.vercel.app](https://portfolio-navy-delta-f2nb38f4r5.vercel.app)
+
 ![Portfolio Preview](public/preview.png)
 
 ## ✨ Features
