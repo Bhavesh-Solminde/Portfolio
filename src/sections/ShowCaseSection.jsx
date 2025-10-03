@@ -50,7 +50,7 @@ const ShowCaseSection = () => {
               </a>
             </div>
             <div className="text-content">
-              <h2>🏡 Hostara – Full-Stack Property Rental Platform</h2>
+              <h2> Hostara – Full-Stack Property Rental Platform</h2>
               <p className="text-white-50 md:text-xl">
                 A comprehensive property booking and rental house website built
                 using the MERN Stack + EJS, enabling users to explore, list, and
@@ -63,16 +63,20 @@ const ShowCaseSection = () => {
           <div className="project-list-wrapper overflow-hidden">
             <div className="project" ref={project2Ref}>
               <div className="image-wrapper bg-[#ffefdb]">
-                <img src="/images/project2.png" alt="project2" />
+                <a href="https://github.com/Bhavesh-Solminde/Resume-Optimizer">
+                  <img src="/images/project2.png" alt="project2" />
+                </a>
               </div>
-              <h2>Library Management Platform</h2>
+              <h2> Resume Optimizer – AI Resume Co-Pilot</h2>
             </div>
 
             <div className="project" ref={project3Ref}>
               <div className="image-wrapper bg-[#ffe7eb]">
-                <img src="/images/project3.png" alt="project3" />
+                <a href="https://bhavesh-solminde.github.io/Streetly/">
+                  <img src="/images/project3.png" alt="project3" />
+                </a>
               </div>
-              <h2>YC Directory - A Startup Showcase App</h2>
+              <h2> Streetly – React Street Food Website with Chatbot</h2>
             </div>
           </div>
         </div>
