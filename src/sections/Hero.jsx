@@ -5,7 +5,7 @@ import HeroExperience from "../components/models/HeroModels/HeroExperience";
 import { useGSAP } from "@gsap/react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import AnimatedCounter from "../components/animatedCounter";
+import AnimatedCounter from "../components/AnimatedCounter";
 
 const Hero = () => {
   useGSAP(() => {
