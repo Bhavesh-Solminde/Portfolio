@@ -4,9 +4,7 @@
 
 ## 🌟 Live Demo
 
-🔗 **Primary URL:** [https://portfolio-bhaveshs-projects-51e32c25.vercel.app](https://portfolio-bhaveshs-projects-51e32c25.vercel.app)
-
-🔗 **Alternative URL:** [https://portfolio-navy-delta-f2nb38f4r5.vercel.app](https://portfolio-navy-delta-f2nb38f4r5.vercel.app)
+🔗 **Portfolio URL:** [https://www.bhaveshsolminde.dev/](https://www.bhaveshsolminde.dev/)
 
 ![Portfolio Preview](public/preview.png)
 
