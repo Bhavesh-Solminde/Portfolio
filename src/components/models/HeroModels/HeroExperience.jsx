@@ -11,7 +11,7 @@ const HeroExperience = () => {
 
   useEffect(() => {
     const checkScreenSize = () => {
-      const width = window.innerWidth;
+      const width = window.innerWidth / 1.5;
       setIsMobile(width <= 480);
       setIsTablet(width <= 1280 && width > 480);
     };
