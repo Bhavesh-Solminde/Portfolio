@@ -1,4 +1,4 @@
-# 🚀 Personal Portfolio
+#  Personal Portfolio
 
 > A modern, interactive portfolio website showcasing my skills as a full-stack developer with stunning 3D animations and smooth user experiences.
 
