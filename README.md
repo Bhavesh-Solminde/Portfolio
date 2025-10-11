@@ -11,7 +11,7 @@
 ## ✨ Features
 
 - **🎨 Modern Design** - Clean, professional interface with dark theme
-- **🎭 3D Animations** - Interactive Three.js scenes with custom 3D models
+- **🎭 3D Animations** - Interactive **Three.js** scenes with custom 3D models
 - **🌟 GSAP Animations** - Smooth text animations and scroll-triggered effects
 - **📱 Fully Responsive** - Optimized for all devices and screen sizes
 - **⚡ Performance Optimized** - Fast loading with Vite build system
