@@ -63,20 +63,26 @@ const ShowCaseSection = () => {
           <div className="project-list-wrapper overflow-hidden">
             <div className="project" ref={project2Ref}>
               <div className="image-wrapper bg-[#ffefdb]">
-                <a href="https://github.com/Bhavesh-Solminde/Resume-Optimizer">
-                  <img src="/images/project2.png" alt="project2" />
+                <a href="https://github.com/Bhavesh-Solminde/Resumer">
+                  <img src="/images/project2.jpg" alt="project2" />
                 </a>
               </div>
-              <h2> Resume Optimizer – AI Resume Co-Pilot</h2>
+              <h2>
+                {" "}
+                Resumer – AI-Powered Resume Optimizer with ATS Scoring and
+                resume builder
+              </h2>
             </div>
 
             <div className="project" ref={project3Ref}>
               <div className="image-wrapper bg-[#ffe7eb]">
-                <a href="https://bhavesh-solminde.github.io/Streetly/">
-                  <img src="/images/project3.png" alt="project3" />
+                <a href="https://chat-app-1wi6.onrender.com/">
+                  <img src="/images/project3.jpg" alt="project3" />
                 </a>
               </div>
-              <h2> Streetly – React Street Food Website with Chatbot</h2>
+              <h2>
+                Chat-App – Real-Time Messaging Application with WebSockets
+              </h2>
             </div>
           </div>
         </div>
