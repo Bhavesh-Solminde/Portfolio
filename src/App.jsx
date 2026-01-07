@@ -1,22 +1,26 @@
-import React from "react";
-import ShowCaseSection from "./sections/ShowCaseSection";
+import React, { Suspense, lazy } from "react";
 import NavBar from "./sections/NavBar";
 import Hero from "./sections/Hero";
-import ExperienceSection from "./sections/ExperienceSection";
-import Footer from "./sections/Footer";
-import Contact from "./sections/Contact";
-import TechStack from "./sections/TechStack";
+
+const ShowCaseSection = lazy(() => import("./sections/ShowCaseSection"));
+const ExperienceSection = lazy(() => import("./sections/ExperienceSection"));
+const Footer = lazy(() => import("./sections/Footer"));
+const Contact = lazy(() => import("./sections/Contact"));
+const TechStack = lazy(() => import("./sections/TechStack"));
+
 const App = () => {
   return (
     <main>
       <div>
         <NavBar />
         <Hero />
-        <ShowCaseSection />
-        <ExperienceSection />
-        <TechStack />
-        <Contact />
-        <Footer />
+        <Suspense fallback={<div>Loading...</div>}>
+          <ShowCaseSection />
+          <ExperienceSection />
+          <TechStack />
+          <Contact />
+          <Footer />
+        </Suspense>
       </div>
     </main>
   );

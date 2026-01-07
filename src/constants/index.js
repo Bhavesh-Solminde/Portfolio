@@ -98,37 +98,6 @@ const expCards = [
     ],
   },
   {
-    id: "resume-ai-optimizer-2025",
-    review:
-      "An impressive integration of frontend, backend, and AI. Demonstrated maturity in handling data flow and API integration in a production-grade tool.",
-    imgPath: "/images/resume.png",
-    logoPath: "/images/resume.png",
-    title: "MERN Developer – Resume Optimizer AI Tool",
-    date: "July 2025 – August 2025",
-    responsibilities: [
-      "Developed a resume optimization tool that uses AI to improve resume content and formatting.",
-      "Integrated React frontend with Express backend using robust API architecture.",
-      "Handled user input, file parsing, and real-time feedback with effective state management.",
-      "Implemented OpenAI/GPT-based logic to analyze and suggest resume improvements.",
-    ],
-  },
-  {
-    id: "streetly-food-frontend-2025",
-    review:
-      "Streetly showcases my ability to build polished UIs with interactivity and design finesse. The chatbot and dynamic menu bring it to life.",
-    imgPath: "/images/streetly.png",
-    logoPath: "/images/streetly.png",
-    title: "Frontend Developer – Streetly (Street Food Website)",
-    date: "August 2025 – September 2025",
-    responsibilities: [
-      "Built the frontend using React 18 + Vite, implementing a responsive design across breakpoints.",
-      "Created an interactive chatbot to respond to menu queries, pricing, location, and timings.",
-      "Displayed dynamic menu & pricing components (food + beverages) using data-driven React structure.",
-      "Handled smooth scrolling, transitions, animations, and cross-browser UI consistency.",
-      "Ensured mobile-first responsiveness and performance optimization for various device widths.",
-    ],
-  },
-  {
     id: "personal-portfolio-2025",
     review:
       "A pixel-perfect 3D portfolio with excellent use of animation libraries. Performance-focused and visually engaging — the work of a polished frontend dev.",
@@ -141,6 +110,37 @@ const expCards = [
       "Integrated Three.js to create interactive 3D elements for a dynamic user experience.",
       "Applied smooth scroll animations and performance optimization techniques.",
       "Deployed using Vercel with CI/CD pipeline for rapid iteration and updates.",
+    ],
+  },
+  {
+    id: "chat-app-realtime-2025",
+    review:
+      "Production-grade real-time chat application focused on low-latency communication, resilient WebSocket workflows, and scalable full-stack architecture.",
+    imgPath: "/images/chat-app.png",
+    logoPath: "/images/chat-app.png",
+    title: "Full Stack Developer – Real-Time Chat Application",
+    date: "Nov 2025 - Dec 2025",
+    responsibilities: [
+      "Built a real-time messaging system using Socket.IO to enable low-latency, bidirectional communication.",
+      "Designed backend logic to handle concurrent users, message delivery, room management, and session lifecycle.",
+      "Implemented event-driven architecture with reconnect handling and state synchronization for reliability.",
+      "Developed a responsive frontend optimized for real-time UX, message consistency, and connection stability.",
+    ],
+  },
+  {
+    id: "resumer-optimizer-2026",
+    review:
+      "AI-powered resume optimization platform demonstrating end-to-end full-stack engineering, clean architecture, and real-world AI integration.",
+    imgPath: "/images/resumer.svg",
+    logoPath: "/images/resumer.svg",
+    title: "Full Stack Developer – Resumer ",
+    date: "Dec 2025 – present",
+    responsibilities: [
+      "Designed and built a full-stack application that can Analyze, Optimize your resume. It can also Build your Resume from scratch or from existing resume.",
+      "Developed a responsive React frontend using Vite and Tailwind CSS with predictable state management.",
+      "Implemented scalable REST APIs using Express and MongoDB following controller–service architecture.",
+      "Integrated AI-driven resume analysis, secure authentication, file uploads, and resume scan history tracking.",
+      "Optimized application workflows for real user data handling, reliability, and future feature extensibility.",
     ],
   },
 ];

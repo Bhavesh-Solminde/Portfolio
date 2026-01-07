@@ -276,6 +276,28 @@ section {
     @apply grid xl:grid-cols-5 md:grid-cols-3 grid-cols-1 xl:gap-16 md:gap-10 gap-5 mt-16;
   }
 
+  /* When the viewport is narrower than 1800px, use a wrapping flex layout
+     so tech cards will wrap instead of staying in a fixed grid. This keeps
+     the cards responsive and avoids very small grid columns on wide screens
+     that then shrink down. */
+  @media (max-width: 1800px) {
+    .tech-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2.5rem; /* matches md:gap-10 */
+      margin-top: 4rem; /* keep similar spacing as mt-16 */
+    }
+
+    /* Give each card a consistent base size so they wrap predictably.
+       Using a fixed flex-basis allows the layout to show multiple cards
+       per row and wrap to the next line when space runs out. */
+    .tech-grid > * {
+      flex: 0 1 320px; /* grow 0, shrink 1, base 320px */
+      max-width: 420px; /* prevent overly wide cards on very wide viewports */
+    }
+  }
+
   .tech-icon-wrapper {
     @apply flex justify-center items-center w-52 h-60 relative;
   }

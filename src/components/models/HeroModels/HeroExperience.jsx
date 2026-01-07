@@ -3,7 +3,6 @@ import { Canvas } from "@react-three/fiber";
 import React, { useState, useEffect } from "react";
 import { Room } from "./Room";
 import HeroLights from "./HeroLights";
-import Particles from "./particles";
 
 const HeroExperience = () => {
   const [isTablet, setIsTablet] = useState(false);
@@ -11,7 +10,7 @@ const HeroExperience = () => {
 
   useEffect(() => {
     const checkScreenSize = () => {
-      const width = window.innerWidth / 1.5;
+      const width = window.innerWidth;
       setIsMobile(width <= 480);
       setIsTablet(width <= 1280 && width > 480);
     };
@@ -27,10 +26,11 @@ const HeroExperience = () => {
   }, []);
 
   return (
-    <Canvas camera={{ position: [0, 0, 15], fov: isTablet ? 60 : 45 }}>
+    <Canvas
+      dpr={[1, 2]}
+      camera={{ position: [0, 0, 15], fov: isTablet ? 60 : 45 }}
+    >
       <HeroLights />
-
-      <Particles count={100} />
 
       <OrbitControls
         enablePan={false}
